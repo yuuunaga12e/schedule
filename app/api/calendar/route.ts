@@ -21,12 +21,11 @@ export async function GET(request: Request) {
         const formatKey = KEY.replace(/\\n/g, "\n");
 
         // 3. Google APIの認証
-        const jwtClient = new google.auth.JWT(
-            EMAIL,
-            undefined,
-            formatKey,
-            ["https://www.googleapis.com/auth/calendar.readonly"]
-        );
+        const jwtClient = new google.auth.JWT({
+            email: EMAIL,
+            key: formatKey,
+            scopes: ["https://www.googleapis.com/auth/calendar.readonly"],
+        });
 
         // 4. カレンダーAPIクライアントの作成
         const calendar = google.calendar({ version: "v3", auth: jwtClient });
