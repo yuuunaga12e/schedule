@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ベビーシッター料金表</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Zen+Kaku+Gothic+New:wght@400;500;700&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+
+    <div class="page-container">
+        <!-- Header -->
+        <header class="header">
+            <h1 class="main-title">ベビーシッター料金表</h1>
+            <p class="subtitle">福岡市・近郊エリア / 個人契約</p>
+            <h2 class="provider-name">LynxBase<br><span class="provider-name-jp">永 裕加里（なが ゆかり）</span></h2>
+        </header>
+
+        <!-- Intro Text immediately below header line -->
+        <div class="intro-text-only">
+            <p>大切なお子様を安心・安全にお預かりいたします。<br>
+                ご家庭の方針に寄り添った保育を心がけております。</p>
+        </div>
+
+        <!-- Main Rates & Top Image Section (Grid Layout) -->
+        <section class="section">
+            <h2 class="section-title">ご利用料金</h2>
+
+            <div class="rates-grid">
+                <!-- 1. Business Hours (Top Left) -->
+                <div class="business-hours">
+                    <p><strong>【対応可能時間】</strong><br>
+                        月〜金：9:30 〜 17:00<br>
+                        土曜日：9:30 〜 16:30</p>
+                    <div class="hours-note">
+                        <p><strong>※ 最低利用時間：2時間〜</strong></p>
+                        <p>※ 延長時、15分単位で請求いたします。</p>
+                    </div>
+                </div>
+
+                <!-- 2. Profile Image (Top Right) -->
+                <div class="top-image-box">
+                    <img src="yukari_top_prof.jpg" alt="Yukari playing with child" class="top-grid-img">
+                </div>
+
+                <!-- 3. Regular Plan (Bottom Left) -->
+                <div class="rate-card">
+                    <h3 class="card-title">定期利用</h3>
+                    <div class="card-price">
+                        2,200<span class="unit">円 / 1時間</span>
+                    </div>
+                    <div class="card-details">
+                        <p class="highlight-text">延長: 550円 / 15分</p>
+                    </div>
+                </div>
+
+                <!-- 4. Spot Plan (Bottom Right) -->
+                <div class="rate-card highlight">
+                    <h3 class="card-title">スポット利用</h3>
+                    <div class="card-price">
+                        2,500<span class="unit">円 / 1時間</span>
+                    </div>
+                    <div class="card-details">
+                        <p class="highlight-text">延長: 625円 / 15分</p>
+                    </div>
+                </div>
+
+                <!-- 5. Usage Notes (Left Column, Row 2) -->
+            </div>
+        </section>
+
+        <!-- Options with Image -->
+        <section class="section">
+            <h2 class="section-title">オプション・加算料金</h2>
+
+
+
+            <table class="simple-table">
+                <tr>
+                    <th>ごきょうだい追加 (2人目以降)</th>
+                    <td>
+                        <span class="option-price">+ 500円 / 1時間</span><br>
+                        <span class="small-note">（延長時: +125円 / 15分）</span>
+                    </td>
+                </tr>
+                <tr>
+                    <th>入浴補助・沐浴</th>
+                    <td>+ 500円 / 回</td>
+                </tr>
+            </table>
+        </section>
+
+        <!-- Cancellation Policy (Contract Article 5) -->
+        <!-- Transportation / Payment -->
+        <section class="section page-break">
+            <h2 class="section-title">交通費・お支払方法</h2>
+            <div class="grid-2x2-mixed">
+                <!-- Top Left: Calm Image -->
+                <div class="grid-box image-box">
+                    <img src="photo_calm.png" alt="Calm room" class="box-image">
+                </div>
+
+                <!-- Top Right: Traffic -->
+                <div class="grid-box text-box">
+                    <h3>交通費</h3>
+                    <p>シッター自宅から業務場所までの実費（公共交通機関運賃等）を別途請求いたします。</p>
+                </div>
+
+                <!-- Bottom Left: Payment -->
+                <div class="grid-box text-box">
+                    <h3>お支払いについて</h3>
+                    <div class="payment-info-compact">
+                        <p><strong>● スポット利用</strong><br>
+                            当日現金払い</p>
+                        <p><strong>● 定期利用</strong><br>
+                            末日締め・翌月25日払い（銀行振込）<br>
+                            <span style="font-size: 11px; color: #666;">※振込手数料はお客様負担</span>
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Bottom Right: Sub Image -->
+                <div class="grid-box image-box">
+                    <img src="yukari_grid_reading.jpg" alt="Reading book" class="box-image reading-img">
+                </div>
+            </div>
+        </section>
+
+        <!-- Cancellation Policy (Contract Article 5) -->
+        <section class="section">
+            <h2 class="section-title">キャンセル規定</h2>
+            <p class="policy-text">お客様の都合により業務をキャンセルされる場合、以下のキャンセル料を申し受けます。</p>
+            <table class="simple-table policy-table">
+                <tr>
+                    <th>前日 18:00 までのキャンセル</th>
+                    <td class="free">無 料</td>
+                </tr>
+                <tr>
+                    <th>前日 18:00以降 〜 当日</th>
+                    <td>予定保育料の 50%</td>
+                </tr>
+                <tr>
+                    <th>開始時刻後の連絡または無断キャンセル</th>
+                    <td>予定保育料の 100%</td>
+                </tr>
+            </table>
+            <p class="policy-subtext">※ お子様の体調不良その他やむを得ない事情がある場合は、協議の上、キャンセル料の免除または減額を行うことができます。</p>
+        </section>
+
+        <!-- Footer / Contact with Image -->
+        <footer class="footer">
+
+            <!-- (Image moved to above section) -->
+
+            <div class="contact-section">
+                <h3 class="contact-title">お問い合わせ・ご予約</h3>
+
+                <div class="contact-info-row">
+                    <!-- Text Info -->
+                    <div class="contact-text">
+                        <div class="contact-item">
+                            <span class="label">Name</span>
+                            <span class="value">LynxBase / 永 裕加里</span>
+                        </div>
+                        <div class="contact-item">
+                            <span class="label">Tel</span>
+                            <span class="value"></span>
+                        </div>
+                        <div class="contact-item">
+                            <span class="label">Mail</span>
+                            <span class="value"></span>
+                        </div>
+                    </div>
+
+                    <!-- QR Codes -->
+                    <div class="qr-area">
+                        <div class="qr-box">
+                            <div class="qr-placeholder">LINE<br>QR</div>
+                            <span class="qr-label">LINE</span>
+                        </div>
+                        <div class="qr-box">
+                            <div class="qr-placeholder">Insta<br>QR</div>
+                            <span class="qr-label">Instagram</span>
+                        </div>
+                        <div class="qr-box">
+                            <div class="qr-placeholder">HP<br>QR</div>
+                            <span class="qr-label">HP</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+</body>
+
+</html>
