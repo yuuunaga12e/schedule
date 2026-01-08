@@ -1,6 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
-import BookingCalendar from "./components/BookingCalendar";
+import Script from "next/script";
 
 export default function Home() {
   return (
@@ -54,7 +54,16 @@ export default function Home() {
           <span className="text-primary font-semibold tracking-wide uppercase text-sm mb-2">Schedule</span>
           <h2 className="text-3xl font-bold mb-12 text-center text-foreground">空き状況・予約</h2>
 
-          <BookingCalendar />
+          <div className="w-full max-w-4xl bg-white rounded-2xl shadow-sm border border-border overflow-hidden">
+            <iframe
+              src="https://app.acuityscheduling.com/schedule.php?owner=38006412&ref=embedded_csp"
+              title="Schedule Appointment"
+              width="100%"
+              height="800"
+              className="border-0"
+            />
+            <Script src="https://embed.acuityscheduling.com/js/embed.js" />
+          </div>
         </div>
       </section>
 
