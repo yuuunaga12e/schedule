@@ -15,7 +15,7 @@ export default function Home() {
             <a href="#" className="text-sm font-medium text-muted-foreground hover:text-foreground transition-colors">
               HP
             </a>
-            <a href="https://price-peach.vercel.app/" target="_blank" rel="noopener noreferrer" className="text-sm font-medium text-muted-foreground hover:text-foreground transition-colors">
+            <a href="https://price.lynxbaseworks.com/" target="_blank" rel="noopener noreferrer" className="text-sm font-medium text-muted-foreground hover:text-foreground transition-colors">
               料金表
             </a>
             <button className="rounded-full bg-primary px-4 py-2 text-sm font-medium text-primary-foreground hover:opacity-90 transition-opacity shadow-sm">
